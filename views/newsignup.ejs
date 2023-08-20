@@ -1,0 +1,556 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Heartstrings</title>
+    <link rel="stylesheet" href="../style.css" type="text/css" />
+    <link rel="stylesheet" href="../profile.css" type="text/css" />
+    <script src="script.js" type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carlito&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-header">
+      <div class="buttondiv">
+        <a href="/"><button class="heartstrings">Heartstrings</button></a>
+        <div class="buttons-align">
+
+          <a href="/resources"> <button class="buttonnew">Resources</button></a>
+          
+          <!-- <div class='myButton'> -->
+
+             
+                
+
+         <a href="/home" ><button class="buttonnew">About</button></a>
+         
+         <a href="/logout" ><button class="buttonnew"> Logout</button> </a>
+        </div>  
+      </div>
+    </div>  
+    <hr />
+  </div>
+    <!-- main big container with flex value of row-->
+    <form method="POST" action="/info" enctype="multipart/form-data" >
+      <div class="main-container">
+        <!-- first div of big flex container -->
+        <div class="info">
+          <div class="category-container">
+            <div class="text">Age:</div>
+            <input
+              type="text"
+              name="age"
+              placeholder="your age"
+              class="signup-age"
+            />
+          </div>
+          <div class="category-container">
+            <label for="sexuality">
+              <div class="text">Sexuality:</div>
+            </label>
+            <select id="sexuality" name="sexuality">
+              <optgroup label="sexuality">
+                <option value="straight">Straight</option>
+                <option value="bisexual">Bisexual</option>
+                <option value="lesbian">Lesbian</option>
+                <option value="gay">Gay</option>
+                <option value="pansexual">Pansexual</option>
+                <option value="asexual">Asexual</option>
+                <option value="aromantic">Aromatic</option>
+                <option value="not-listed-s">
+                  My sexuality is not listed here
+                </option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="category-container">
+            <label for="gender">
+              <div class="text">Gender:</div>
+            </label>
+            <select id="gender" name="gender">
+              <optgroup label="gender">
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Non-binary">Non-binary</option>
+                <option value="Prefer-not-to-say">Prefer not to say</option>
+                <option value="None-of-the-above">None of the above</option>
+                <option value="not-listed-g">
+                  My gender is not listed here
+                </option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="category-container">
+            <div class="text">Work:</div>
+            <input type="text" name="work" placeholder="" class="signup-work" />
+          </div>
+          <div class="category-container">
+            <div class="text">Education:</div>
+            <input
+              type="text"
+              name="education"
+              placeholder=""
+              class="signup-education"
+            />
+          </div>
+          <div class="category-container">
+            <div class="text">Location:</div>
+            <input
+              type="text"
+              name="location"
+              placeholder=""
+              class="signup-location"
+            />
+          </div>
+          <div class="category-container">
+            <div class="text">Hometown:</div>
+            <input
+              type="text"
+              name="hometown"
+              placeholder=""
+              class="signup-hometown"
+            />
+          </div>
+          <div class="category-container">
+            <div class="text">Ethnicity:</div>
+            <input
+              type="text"
+              name="ethnicity"
+              placeholder=""
+              class="signup-ethnicity"
+            />
+          </div>
+          <div class="category-container">
+            <div class="text">Height:</div>
+            <input
+              type="text"
+              name="height"
+              placeholder=""
+              class="signup-height"
+            />
+          </div>
+          <div class="category-container">
+            <div class="text">Religion:</div>
+            <div class="input-container">
+              <select id="religion" name="religion">
+                <optgroup label="religion">
+                  <option value="agnostic">Agnostic</option>
+                  <option value="Atheist">Atheist</option>
+                  <option value="Budddhist">Buddhist</option>
+                  <option value="Catholic">Catholic</option>
+                  <option value="Christian">Christian</option>
+                  <option value="Hindu">Hindu</option>
+                  <option value="Jewish">Jewish</option>
+                  <option value="Muslim">Muslim</option>
+                  <option value="Sikh">Sikh</option>
+                  <option value="Spiritual">Spiritual</option>
+                  <option value="open">Open to all</option>
+                  <option value="other">Other</option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
+          <div class="category-container">
+            <label for="vaccine">
+              <div class="text">Covid Vaccine:</div>
+            </label>
+            <select id="vaccine" name="vaccine">
+              <optgroup label="vaccine">
+                <option value="vaccinated">Vaccinated</option>
+                <option value="partially-vaccinated">
+                  Partially vaccinated
+                </option>
+                <option value="not-yet">Not yet</option>
+                <option value="Prefer-not-to-say">Prefer not to say</option>
+              </optgroup>
+            </select>
+          </div>
+        </div>
+        <!-- second container with prefrences and lifestyle which will have a flex value of column -->
+        <div class="profile-1">
+          <div class="profile-container">
+            <h1>Add your dating preferences</h1>
+
+            <div class="category-container">
+              <div class="text">Sexuality:</div>
+              <div class="input-container">
+                <select id="sexuality" name="sexualitypref">
+                  <optgroup label="sexuality">
+                    <option value="straight">Straight</option>
+                    <option value="bisexual">Bisexual</option>
+                    <option value="lesbian">Lesbian</option>
+                    <option value="gay">Gay</option>
+                    <option value="pansexual">Pansexual</option>
+                    <option value="asexual">Asexual</option>
+                    <option value="aromantic">Aromatic</option>
+                  </optgroup>
+                </select>
+              </div>
+            </div>
+            <div class="category-container">
+              <div class="text">Gender:</div>
+              <div class="input-container">
+                <select id="gender" name="genderpref">
+                  <optgroup label="gender">
+                    <option value="Female">Female</option>
+                    <option value="Male">Male</option>
+                    <option value="Non-binary">Non-binary</option>
+                    <option value="Prefer-not-to-say">Prefer not to say</option>
+                    <option value="None-of-the-above">None of the above</option>
+                  </optgroup>
+                </select>
+              </div>
+            </div>
+
+            <div class="category-container">
+              <div class="text">Age Range:</div>
+              <div class="input-container">
+                <input
+                  type="number"
+                  id="min-age"
+                  name="minage"
+                  min="18"
+                  max="100"
+                  value="18"
+                />
+                <span>-</span>
+                <input
+                  type="number"
+                  id="max-age"
+                  name="maxage"
+                  min="18"
+                  max="100"
+                  value="100"
+                />
+              </div>
+            </div>
+            <div class="category-container">
+              <div class="text">Maximum Distance:</div>
+              <div class="input-container">
+                <input
+                  type="number"
+                  id="distance"
+                  name="distance"
+                  min="1"
+                  max="100"
+                  name="maxdistance"
+                />
+              </div>
+            </div>
+            <div class="category-container">
+              <div class="text">Ethnicity:</div>
+              <div class="input-container">
+                <select id="ethnicity" name="ethnicitypref">
+                  <optgroup label="ethnicity">
+                    <option value="American-indian">American Indian</option>
+                    <option value="black">Black/African Descent</option>
+                    <option value="east-asian">East Asian</option>
+                    <option value="Hispanic-latino">Hispanic/Latino</option>
+                    <option value="middle-eastern">Middle Eastern</option>
+                    <option value="pacific-islander">Pacific Islander</option>
+                    <option value="south-asian">South Asian</option>
+                    <option value="south-east-asian">South East Asian</option>
+                    <option value="white">White/Caucasian</option>
+                    <option value="other">Other</option>
+                    <option value="open">Open to all</option>
+                  </optgroup>
+                </select>
+              </div>
+            </div>
+            <div class="category-container">
+              <div class="text">Religion:</div>
+              <div class="input-container">
+                <select id="religion" name="religionpref">
+                  <optgroup label="religion">
+                    <option value="agnostic">Agnostic</option>
+                    <option value="Atheist">Atheist</option>
+                    <option value="Budddhist">Buddhist</option>
+                    <option value="Catholic">Catholic</option>
+                    <option value="Christian">Christian</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Jewish">Jewish</option>
+                    <option value="Muslim">Muslim</option>
+                    <option value="Sikh">Sikh</option>
+                    <option value="Spiritual">Spiritual</option>
+                    <option value="open">Open to all</option>
+                    <option value="other">Other</option>
+                  </optgroup>
+                </select>
+              </div>
+            </div>
+            <!-- lifestyle container which will be in a column with prefrences -->
+          </div>
+          <div class="lifestyle">
+            <div class="lifestyle-container">
+              <h1>Your lifestyle</h1>
+              <div class="category-container">
+                <div class="text">Drinking:</div>
+                <div class="input-container">
+                  <select id="drinking" name="drinking">
+                    <optgroup label="drinking">
+                      <option value="yes">Yes</option>
+                      <option value="no">No</option>
+                      <option value="sometimes">Sometimes</option>
+                      <option value="socially">Socially</option>
+                    </optgroup>
+                  </select>
+                </div>
+              </div>
+              <div class="category-container">
+                <div class="text">Smoking:</div>
+                <div class="input-container">
+                  <select id="smoking" name="smoking">
+                    <optgroup label="smoking">
+                      <option value="yes">Yes</option>
+                      <option value="no">No</option>
+                      <option value="sometimes">Sometimes</option>
+                      <option value="socially">Socially</option>
+                    </optgroup>
+                  </select>
+                </div>
+              </div>
+              <div class="category-container">
+                <div class="text">Marijuana:</div>
+                <div class="input-container">
+                  <select id="Marijuana" name="marijuana">
+                    <optgroup label="Marijuana">
+                      <option value="yes">Yes</option>
+                      <option value="no">No</option>
+                      <option value="sometimes">Sometimes</option>
+                      <option value="socially">Socially</option>
+                    </optgroup>
+                  </select>
+                </div>
+              </div>
+              <div class="category-container">
+                <div class="text">Drugs:</div>
+                <div class="input-container">
+                  <select id="'Drugs" name="drugs">
+                    <optgroup label="drugs">
+                      <option value="yes">Yes</option>
+                      <option value="no">No</option>
+                      <option value="sometimes">Sometimes</option>
+                      <option value="socially">Socially</option>
+                    </optgroup>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- third container with prompts and upload pictures -->
+        <div class="prompts">
+          <div class="prompts-container">
+            <div class="category-container-1">
+              <label for="prompts">
+                <h1>Answer 3 prompts:</h1>
+              </label>
+              <select id="prompt" name="prompt1">
+                <optgroup label="prompt">
+                  <option value="important-lesson">
+                    What's the most important thing you've learned in your life
+                    so far?
+                  </option>
+                  <option value="hobby">
+                    "What's a hobby or interest that you're currently passionate
+                    about?
+                  </option>
+                  <option value="accomplishment">
+                    "What's your proudest accomplishment?
+                  </option>
+                  <option value="improving-yourself">
+                    "What's something you've been working on improving about
+                    yourself?
+                  </option>
+                  <option value="fear">
+                    What's a fear or challenge you've overcome?"
+                  </option>
+                  <option value="ritual">
+                    What's a unique tradition or ritual you have in your life?
+                  </option>
+                  <option value="smile">
+                    What's something that always makes you smile?"
+                  </option>
+                  <option value="passionate">
+                    What's a cause or issue that you're passionate about?
+                  </option>
+                  <option value="passionate">
+                    What's a cause or issue that you're passionate about?
+                  </option>
+                  <option value="unwind">
+                    What's your favorite way to unwind after a long day?
+                  </option>
+                </optgroup>
+              </select>
+              <div class="category-container">
+                <div class="text">
+                  <input
+                    type="text"
+                    name="response1"
+                    placeholder="your response"
+                    class="signup-response"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="category-container-1">
+              <select id="prompt" name="prompt2">
+                <optgroup label="prompt">
+                  <option value="important-lesson">
+                    What's your proudest accomplishment?
+                  </option>
+                  <option value="hobby">
+                    "What's a hobby or interest that you're currently passionate
+                    about?
+                  </option>
+                  <option value="accomplishment">
+                    What's the most important thing you've learned in your life
+                    so far?
+                  </option>
+                  <option value="improving-yourself">
+                    "What's something you've been working on improving about
+                    yourself?
+                  </option>
+                  <option value="fear">
+                    What's a fear or challenge you've overcome?"
+                  </option>
+                  <option value="ritual">
+                    What's a unique tradition or ritual you have in your life?
+                  </option>
+                  <option value="smile">
+                    What's something that always makes you smile?"
+                  </option>
+                  <option value="passionate">
+                    What's a cause or issue that you're passionate about?
+                  </option>
+                  <option value="passionate">
+                    What's a cause or issue that you're passionate about?
+                  </option>
+                  <option value="unwind">
+                    What's your favorite way to unwind after a long day?
+                  </option>
+                </optgroup>
+              </select>
+              <div class="category-container-1">
+                <div class="text">
+                  <input
+                    type="text"
+                    name="response1"
+                    placeholder="your response"
+                    class="signup-response"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="category-container-1">
+              <select id="prompt" name="prompt3">
+                <optgroup label="prompt">
+                  <option value="important-lesson">
+                    What's a hobby or interest that you're currently passionate
+                    about?
+                  </option>
+                  <option value="hobby">
+                    What's the most important thing you've learned in your life
+                    so far?
+                  </option>
+                  <option value="accomplishment">
+                    "What's your proudest accomplishment?
+                  </option>
+                  <option value="improving-yourself">
+                    "What's something you've been working on improving about
+                    yourself?
+                  </option>
+                  <option value="fear">
+                    What's a fear or challenge you've overcome?"
+                  </option>
+                  <option value="ritual">
+                    What's a unique tradition or ritual you have in your life?
+                  </option>
+                  <option value="smile">
+                    What's something that always makes you smile?"
+                  </option>
+                  <option value="passionate">
+                    What's a cause or issue that you're passionate about?
+                  </option>
+                  <option value="passionate">
+                    What's a cause or issue that you're passionate about?
+                  </option>
+                  <option value="unwind">
+                    What's your favorite way to unwind after a long day?
+                  </option>
+                </optgroup>
+              </select>
+              <div class="category-container">
+                <div class="text">
+                  <input
+                    type="text"
+                    name="response3"
+                    placeholder="your response"
+                    class="signup-response"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pfp-container">
+            <div class="images">
+              
+                <label for="file" class="custom-file-upload">
+                  <span class="material-symbols-outlined"> photo_camera </span>
+                  Upload six pictures
+                </label>
+                <input class='btns' type="file" id="file" name="theimage" />
+               
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <% message %>
+      <input type="hidden" value="<%= message._id %>" name="userid"> 
+      <div class="nextsteps-button">
+        <input
+         
+          type="submit"
+          name="submitbutton"
+          value="Get me started!"
+        />
+      </div>
+
+      
+    </form>
+
+  </body>
+</html>

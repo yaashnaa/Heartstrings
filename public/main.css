@@ -1,0 +1,235 @@
+.anim1 {
+    animation: 2s anim-lineUp ease-out infinite;
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+  h7{
+    font-family: "Dancing Script", cursive;
+    font-size: 60;
+    color: #5941a9;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  h8{
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+    color: #5941a9;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  h9 {
+    height: 100px;
+    margin-top: 0;
+    animation-delay: 10000s;
+    font-size: 36px;
+
+    /* padding-top: 15%; */
+    font-family: "Source Code Pro", monospace;
+    color: #5941a9;
+    word-spacing: 2px;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+    margin: 30px;
+  }
+
+ 
+  h5{
+    margin-top: 20px;
+    text-align: center;
+    overflow: hidden;
+    align-items: center;
+    font-family: "Source Code Pro", monospace;
+    border-right: 0.15em solid rgb(0, 0, 0);
+    white-space: nowrap;
+    animation: typing 1.5s steps(20, end) forwards;
+    font-size: 40px;
+    width: 0;
+    margin-bottom: 10px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+    height: 60%;
+    margin-bottom: 100px;
+  }
+  
+  .grid-item {
+    background-color: #f6f6f6;
+    padding: 20px;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0px 0px 20px #a7a7a7;
+    margin-bottom: 30px;
+  }
+  
+
+  .grid-item:hover {
+    transform: scale(1.2);
+    background-color: white;
+  }
+  
+  .grid-item h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+  
+  .grid-item p {
+    margin-bottom: 1rem;
+  }
+  
+  .grid-item a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: #fff;
+    /* background-color: #5941a9; */
+    text-decoration: none;
+  }
+  
+  /* .grid-item a:hover {
+    background-color: #41317a;
+  }
+   */
+  /* p{
+    font-family: "Source Code Pro", monospace;
+    text-align: center;
+    font-size: 24px;
+  } */
+
+  p1{
+    font-family: "Source Code Pro", monospace;
+    font-size: 28px;
+    color: #5941a9;
+    margin-bottom: 10px;
+  }
+    
+
+    p {
+    font-family: "Source Code Pro", monospace;
+    font-size: 32px;
+    color: #5941a9;
+    margin-bottom: 30px;
+    position: relative;
+    text-decoration: underline white;
+    color: #000;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  p::before {
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+
+    background-color: #000;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  p:hover {
+    color: #000;
+  }
+  
+  p:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+  .articles-container{
+    margin-right: 100px;
+    margin-left: 100px;
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+
+  
+.actual-articles-1{
+    margin-top: 30px;
+    margin: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+    border: 2px solid black;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 5px;
+    /* text-align: center; */
+    font-family: "Source Code Pro", monospace;
+    font-size: 26px;
+    /* justify-content: center;
+    align-items: center; */
+}
+  .heading-1{
+    font-family: "Source Code Pro", monospace;
+    font-size: 44px;
+    color: #5941a9;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .myButton{
+    text-align: center;
+    font-family: "Source Code Pro", monospace;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+    width: fit-content;
+    height: 50px;
+    margin: 10px;
+    text-decoration: underline white;
+    margin-top: 50px;
+    margin: 0 auto;
+  }
+
+  .quiz-results{
+    font-family: "Source Code Pro", monospace;
+    font-size: 26px;
+  }
+  
+  .main-container{
+    padding-right: 20px;
+  }
+
+  .results-quiz{
+    margin-top: 100px;
+    width: 35%;
+    padding: 20px;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+  }

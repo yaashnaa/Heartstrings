@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link href="../style.css" rel="stylesheet">
+        <!-- <link href="../login.css" rel="stylesheet"> -->
+        <!-- <link rel="stylesheet" href="../main.css" />
+        <link rel="stylesheet" href="../resources.css" /> -->
+    
+        <!-- <link href="/fontawesome-free-6.4.0-web/css/fontawesome.css" rel="stylesheet"> -->
+        <!-- <link href="/fontawesome-free-6.4.0-web/css/solid.css" rel="stylesheet"> -->
+    </head>
+    <body>
+        <div class="main-header">
+            <div class="buttondiv">
+              <a href="/"><button class="heartstrings">Heartstrings</button></a>
+              <div class="buttons-align">
+      
+                 
+                  <a href="/register" ><button class="buttonnew"> Register</button> </a>
+                  <a href="/login" ><button class="buttonnew"> Login</button> </a>
+                  
+                  <a href="/home" ><button class="buttonnew">About</button></a>
+      
+
+              </div>  
+            </div>
+          </div>  
+          <hr>
+
+        <div class="form-container">
+            <h1>Login</h1>
+            <form method="POST" action="/authenticate">
+                <input type="text" name="username" placeholder="Email">
+                <input type="password" name="password" placeholder="password">
+                <input type="submit" name="submitbutton" value="login" class="submit-btn">
+            </form>
+            <div class="register-button"><a href="/register" style="text-align: center;" style="align-items: center; font-size: 30px;">Don't have an account? Register!</a></div>
+        </div>
+        
+    </body>
+</html>

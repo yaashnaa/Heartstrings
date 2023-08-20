@@ -1,0 +1,169 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Heartstrings</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../profile.css" />
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carlito&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+
+  <body>
+    <div class="main-header">
+      <div class="buttondiv">
+        <a href="/"><button class="heartstrings">Heartstrings</button></a>
+        <div class="buttons-align">
+
+          <a href="/main/<%=userinfo.userid%>">  <button class="buttonnew">Quizzes</button></a>
+    
+          <a href="/resources"> <button class="buttonnew">Resources</button></a>
+          
+          <!-- <div class='myButton'> -->
+
+              <a href="/completeprofile/<%=userinfo.userid%>"> <button class="buttonnew">profile</button></a>
+                
+
+         <a href="/home" ><button class="buttonnew">About</button></a>
+         
+         <a href="/logout" ><button class="buttonnew"> Logout</button> </a>
+        </div>  
+      </div>
+    </div>  
+    <hr />
+  </div>
+
+    <div class="profile-container-complete">
+    <div class="highlight">
+        <h1>My basics</h1>
+      </div>
+      
+
+      <p2> Age: <%= userinfo.age %></p2>
+      <br />
+      <br>
+      <p2> Sexuality: <%= userinfo.sexuality %></p2>
+      <br />
+      <br>
+      <p2>Gender: <%= userinfo.gender %></p2>
+      <br />
+      <br>
+      <p2>Work: <%= userinfo.work %></p2>
+      <br />
+      <br>
+      <p2>Location: <%= userinfo.location %></p2>
+      <br />
+      <br>
+      <p2>Hometown: <%= userinfo.hometown %></p2>
+      <br />
+      <br>
+      <p2>Ethnicity: <%= userinfo.ethnicity %></p2>
+      <br />
+      <br>
+      <p2>Height: <%= userinfo.height %></p2>
+      <br />
+      <br>
+      <p2>Religion: <%= userinfo.religion %></p2>
+      <br />
+      <br>
+      <p2>Vaccine status:<%= userinfo.vaccine %></p2>
+      <br />
+      <br>
+      <br>
+      <hr>
+      <h1> My preferences </h1>    
+      <p2>Sexuality: <%= userinfo.sexualitypref %></p2>
+      <br />
+      <br>
+      <p2>Gender: <%= userinfo.genderpref %></p2>
+      <br />
+      <br>
+      <p2>Age Range: <%= userinfo.minage %></p2> - <p2><%= userinfo.maxage %></p2>
+      <br />
+      <br>
+      <p2> Maximum distance: <%= userinfo.distance %></p2>
+      <br />
+      <br>
+      <p2>Ethnicity: <%= userinfo.ethnicitypref %></p2>
+      <br />
+      <br>
+      <p2>Religion: <%= userinfo.religionpref %></p2>
+      <br />
+      <br> 
+      <br>
+      <br>
+      <hr>
+      <br>
+      <br> 
+      <h1> My lifestyle </h1>
+      <br>
+      <br>
+      <p2>Drinking: <%= userinfo.drinking %></p2>
+      <br />
+      <br>
+      <p2>Smoking: <%= userinfo.smoking %></p2>
+      <br />
+      <br>
+      <p2>Marijuana: <%= userinfo.marijuana %></p2>
+      <br />
+      <br>
+      <p2>Drugs: <%= userinfo.drugs %></p2>
+      <br />
+      <br>
+      <br>
+      <hr>
+      <br>
+      <h1>Images:</h1>
+       <img class="image-rpofile" src="<%= userinfo.theimage %> "> 
+ 
+      <h1> My prompts</h1>
+      <br>
+      <p2>Prompt 1: <%= userinfo.prompt1 %></p2>
+      <br />
+      <br>
+      <p2>Response: <%= userinfo.response1 %></p2>
+      <br />
+      <br>
+      <p2>Prompt 2: <%= userinfo.prompt2 %></p2>
+      <br />
+      <br>
+      <p2>Response 2: <%= userinfo.response2 %></p2>
+      <br />
+      <br>
+      <p2>Prompt 3: <%= userinfo.prompt3 %></p2>
+      <br />
+      <br>
+      <p2>Response 3: <%= userinfo.response3 %></p2>
+      <br />
+      <br>
+
+
+      
+
+    </div>
+  </body>
+</html>

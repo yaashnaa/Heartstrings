@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Love Match</title>
+    <link rel="stylesheet" href="../style.css" />
+    <!-- <script>
+            setTimeout(function() {
+                window.location.href = "/home";
+            }, 5000);   
+        </script> -->
+    <script src="../script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carlito&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- <div class="main-header">
+            <div class="buttondiv">
+                <button class="he>artstrings">Heartstrings</button>
+                <div class="buttons-align">
+                    <button class="buttonnew">Quizzes</button>
+                    <button class="buttonnew">Resources</button>
+                    <button class="buttonnew">Profile</button>
+                    <button class="buttonnew">About</button>
+                </div>
+            </div>
+        </div>
+        <hr> -->
+    <div class="center">
+      <div class="typewriter">
+        <h2>Congratulations on making your profile!</h2>
+      </div>
+      <div class="fade">
+        <h3>Tell us more about yourself</h3>
+      </div>
+
+      <div class='button1'>
+        <% if (message && message._id) { %>
+          <a href="/newsignup/<%= message._id %>">
+            <button class="myButton1">Complete my profile</button>
+          </a>
+        <% } else { %>
+          <!-- Handle the case where message is null or undefined -->
+        <% } %>
+      </div>
+      
+      
+    </div>
+  </body>
+</html>

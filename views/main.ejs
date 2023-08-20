@@ -1,0 +1,178 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Heartstrings</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="../resources.css" />
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carlito&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+
+
+    
+     <div class="main-header">
+        <div class="buttondiv">
+          <a href="/"><button class="heartstrings">Heartstrings</button></a>
+          <div class="buttons-align">
+  
+            <a href="/main/<%=userinfo.userid%>">  <button class="buttonnew">Quizzes</button></a>
+      
+            <a href="/resources"> <button class="buttonnew">Resources</button></a>
+            
+            <!-- <div class='myButton'> -->
+  
+                <a href="/completeprofile/<%=userinfo.userid%>"> <button class="buttonnew">profile</button></a>
+                  
+  
+           <a href="/home" ><button class="buttonnew">About</button></a>
+           
+           <a href="/logout" ><button class="buttonnew"> Logout</button> </a>
+          </div>  
+        </div>
+      </div>  
+      <hr />
+    </div>
+    <!-- <div class='button1'>
+  
+     
+            <button class="myButton1">Complete my profile</button>
+          
+
+
+      </div> -->
+    <div class="center">
+        <div class="typewriter"> 
+            <h5> Let's learn more about your relationship behaviors</h5>
+        </div>
+        <div class="fade"> 
+            <h9> Choose any of the quizzes below</h9>
+        </div>
+    
+
+    <div class="grid-container">
+    <div class="grid-item">
+        <h7>Love <br>Languages</h7>
+        <a href="/lovelanguages"><p>Learn more about love languages here</p></a>
+
+        <p> or </p>
+      
+        
+        <a href="https://www.5lovelanguages.com/quizzes/" target="_blank"><p>Take the quiz</p></a>
+    </div>
+    <div class="grid-item" >
+        <h7>Attachment <br>Style </h7>
+        <a href="/attachment"><p>Learn more about attachment styles here</p></a>
+
+        <p1> or </p1>
+        <br>
+        <a href="https://dianepooleheller.com/attachment-styles-quiz/" target="_blank"><p>Take the quiz</p></a>
+      
+    </div>
+    <div class="grid-item" >
+        <h7>Communication <br> Style </h7> 
+        <a href="/communication"><p>Learn more about communication styles here</p></a>
+
+        <p1> or </p1>
+        <br>
+        
+        <a href="https://www.helpguide.org/relationships/communication-skills-quiz.html" target="_blank"><p>Take the quiz</p></a>
+    </div>
+    <div class="grid-item">
+        <h7>Conflict<br> Resolution </h7>
+        <a href="/conflict"><p>Learn more about conflic resolution styles here</p></a>
+
+        <p1> or </p1>
+        <br>
+      
+        
+        <a href="https://www.cbc.ca/radio/lovecrafting/how-do-you-handle-conflict-take-our-quiz-to-find-out-1.5937908" target="_blank"><p>Take the quiz</p></a>
+    </div>
+   
+    </div>
+   
+    <div class="results-quiz">
+        <form method="POST" action="/info">
+            <div class="main-container">
+            
+            <!-- first div of big flex container -->
+       
+                <h1> Enter your results here: </h1>
+                <div class="category-container">
+                    <div class="quiz-results">Your attachment style:</div>
+                    <input
+                    type="text"
+                    name="attachment"
+
+                    class="attachment"
+                
+                    />
+                </div>
+                <div class="category-container">
+                    <div class="quiz-results">Your love language:</div>
+                    <input
+                    type="text"
+                    name="lovelang"
+        
+                    class="lovelang"
+                
+                    />
+                </div>
+                <div class="category-container">
+                    <div class="quiz-results">Your conflict resolution style:</div>
+                    <input
+                    type="text"
+                    name="conflictres"
+            
+                    class="conflictresol"
+                
+                    />
+                </div>
+                <div class="category-container">
+                    <div class="quiz-results">Your communication style:</div>
+                    <input
+                    type="text"
+                    name="communication"
+                    class="communication"
+                
+                    />
+                </div>
+                <input class='btns'type="submit" name="submitbutton" value="Submit!" /> 
+            </div>
+        </form>
+    </div>
+  </body>
+</html>

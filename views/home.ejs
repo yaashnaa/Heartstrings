@@ -1,0 +1,222 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Love Match</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="../resources.css" />
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carlito&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+
+  <body>
+    <div class="main-header">
+      <div class="buttondiv">
+        <a href="/"><button class="heartstrings">Heartstrings</button></a>
+        <div class="buttons-align">
+
+            <!-- <a href="/main/<%=userinfo.userid%>">  <button class="buttonnew">Quizzes</button></a> -->
+      
+            <!-- <a href="/resources"> <button class="buttonnew">Resources</button></a> -->
+            
+            <!-- <div class='myButton'> --> 
+
+            <!-- <a href="/completeprofile/<%=userinfo.userid%>"> <button class="buttonnew">Profile</button></a> -->
+                  
+            <a href="/register" ><button class="buttonnew"> Register</button> </a>
+            <a href="/login" ><button class="buttonnew"> Login</button> </a>
+            
+            <a href="/home" ><button class="buttonnew">About</button></a>
+
+            <!-- <a href="/login" ><button class="buttonnew"> Logout</button> </a> -->
+            
+        </div>  
+      </div>
+    </div>  
+  <hr />
+  </div>
+    <div class="home-page">
+ 
+      <div class="intro">
+        <div class="intro-heading">
+          <span style="--i: 1">A</span>
+          <span style="--i: 2">B</span>
+          <span style="--i: 3">O</span>
+          <span style="--i: 4">U</span>
+          <span style="--i: 5">T</span>
+          <span style="--i: 5">&nbsp;</span>
+          <span style="--i: 6">U</span>
+          <span style="--i: 7">S</span>
+        </div>
+
+      </div>
+
+
+
+      <div class="heading-3">
+        
+            Our innovative dating platform designed to help you find
+            your perfect match based on your relationship style. Our platform goes
+            beyond swiping left or right, and uses advanced algorithms and quizzes
+            to match you with like-minded individuals who share your dating
+            preferences and relationship behaviors.
+        
+      </div>
+    <!-- <div class="heading-2">where compatibility meets self-imp[rovement</div> -->
+    <div class="card-container">
+      <div class="card">
+        <div class="card__inner">
+          <div class="card__front">Relationship Quizzes <i class="fa-thin fa-pen-field" style="color: #ffffff;"></i></i></div>
+          <div class="card__back">
+
+            <p> Take a variety of quizzes to help you
+              understand your relationship behaviors better.These quizzes include conflict resolution, love languages, attachment styles, and more. The results from these quizzes are used to help match you with compatible partners.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__inner">
+          <div class="card__front">Unique Matching Algorithm</div>
+          <div class="card__back">
+            <p> Unique algorithm that takes into account your quiz results and dating
+              preferences to match you with people who share similar relationship
+              styles.This ensures that you are matched with people who are compatible with your dating preferences and behaviors.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__inner">
+          <div class="card__front">Personalized Profile </div>
+          <div class="card__back">
+            <p> Our user-friendly interface allows you to create a personalized
+              profile that showcases your interests, hobbies, and dating
+              preferences. You can upload a profile picture and write a bio that
+              reflects your personality.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__inner">
+          <div class="card__front">Educational content</div>
+          <div class="card__back">
+            <p> In addition to quizzes and matchmaking, our website offers educational content based on users' quiz results. This content is designed to help users understand their strengths and weaknesses in relationships and provide guidance on how to improve their romantic connections.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyDl0QeNKMq2QgU9hWh_EHQIgMDfCO28xNg",
+        authDomain: "heartstrings-5d352.firebaseapp.com",
+        projectId: "heartstrings-5d352",
+        storageBucket: "heartstrings-5d352.appspot.com",
+        messagingSenderId: "859966122967",
+        appId: "1:859966122967:web:dbc08a9355438030d5b992"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
+      <!-- <div class="features">
+        <div class="features-cont" style="border: 3px solid black">
+            <h1 style="text-align: center;">Features</h1>
+            <br>
+          <p style="text-align: center;" style="font-size: 38px;">Relationship Quizzes </p>
+       
+          Take a variety of quizzes to help you
+          understand your relationship behaviors better.These quizzes include conflict resolution, love languages, attachment styles, and more. The results from these quizzes are used to help match you with compatible partners.
+          <br>
+          <br>
+          <hr style="margin-top: 20px;">
+          <br />
+      
+          <p style="text-align: center;" style="font-size: 38px;">Unique Matching Algorithm </p> <br />
+          <br>
+          Unique algorithm that takes into account your quiz results and dating
+          preferences to match you with people who share similar relationship
+          styles.This ensures that you are matched with people who are compatible with your dating preferences and behaviors.
+          <br>
+          <br />
+          <hr style="margin-top: 20px;">
+          <br>
+          <p style="text-align: center;" style="font-size: 38px;">Personalized Profile </p><br />
+          <br>
+          
+          Our user-friendly interface allows you to create a personalized
+          profile that showcases your interests, hobbies, and dating
+          preferences. You can upload a profile picture and write a bio that
+          reflects your personality.
+          <br>
+          <br>
+          <hr>
+          <br>
+          <p style="text-align: center;" style="font-size: 38px;">Educational content</p>
+          <br>
+          In addition to quizzes and matchmaking, our website offers educational content based on users' quiz results. This content is designed to help users understand their strengths and weaknesses in relationships and provide guidance on how to improve their romantic connections.
+
+        </div>
+
+      </div>
+    </div> -->
+
+
+
+
+    <!-- <footer>
+        <div class="footer-container">
+          <div class="footer-left">
+            <p>&copy; 2023 Heartstrings. All Rights Reserved.</p>
+            <a href="#"style="color: white;">Privacy Policy</a>
+            <a href="#" style="color: white;">Terms of Use</a>
+          </div>
+          <div class="footer-center">
+            <h3>Connect With Us</h3>
+            <ul class="social-links">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+          </div>
+          <div class="footer-right">
+            <h3>Contact Us</h3>
+            <p>1234 Main Street, Anytown USA</p>
+            <p>Email: help@heartstring.com</p>
+            <p>Phone: (555) 123-4567</p>
+          </div>
+        </div>
+      </footer>
+       -->
+  </body>
+</html>
